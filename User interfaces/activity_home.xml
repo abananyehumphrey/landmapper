@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nestedScrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    android:paddingBottom="20dp"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:paddingTop="20dp"
+    tools:context=".HomeActivity">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="40dp"
+            android:src="@drawable/ic_location_on_black_24dp" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textViewLinkRegister"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            android:text="Select account to continue"
+            android:textSize="16dp" />
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textViewBuyer"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            android:text="Buyer"
+            android:textSize="16dp" />
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textViewSurveyor"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            android:text="Surveyor"
+            android:textSize="16dp" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</androidx.core.widget.NestedScrollView>

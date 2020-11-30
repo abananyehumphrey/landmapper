@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ScrollView01"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".LocationActivity">
+        <TextView
+            android:id="@+id/textViewCornerA"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Corner A"
+            android:textColor="#fff"
+            android:padding="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/locationLatitude"
+            android:hint="Latitude"
+            android:textColor="#fff"
+            android:padding="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/locationLongitude"
+            android:hint="Longitude"
+            android:layout_below="@id/locationLatitude"
+            android:textColor="#fff"
+            android:padding="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Get location A"
+            android:textColor="#fff"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:id="@+id/getLocation"
+            android:layout_below="@id/locationLongitude"
+            android:background="@color/colorPrimary"/>
+        <TextView
+            android:id="@+id/textViewCornerB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Corner B"
+            android:textColor="#fff"
+            android:padding="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_below="@id/getLocation"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/locationLatitudeB"
+            android:hint="LatitudeB"
+            android:textColor="#fff"
+            android:padding="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_below="@+id/textViewCornerB"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/locationLongitudeB"
+            android:hint="LongitudeB"
+            android:layout_below="@id/locationLatitudeB"
+            android:textColor="#fff"
+            android:padding="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp" />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Get location B"
+            android:textColor="#fff"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:id="@+id/getLocationB"
+            android:layout_below="@id/locationLongitudeB"
+            android:background="@color/colorPrimary"/>
+        <TextView
+            android:id="@+id/tvEnterdetails"
+            android:layout_below="@id/getLocationB"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textColor="#fff"
+            android:text="Enter details of the land owner"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:textSize="16sp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textColor="#000"
+            android:id="@+id/fullName"
+            android:layout_below="@+id/tvEnterdetails"
+            android:layout_marginTop="10dp"
+            android:hint="Full name"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:textSize="16sp"
+            android:paddingLeft="10dp"
+            android:inputType="text"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/mobileNumber"
+            android:layout_below="@+id/fullName"
+            android:layout_marginTop="10dp"
+            android:hint="Phone Number"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:textSize="16sp"
+            android:paddingLeft="10dp"
+            android:inputType="number"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textColor="#fff"
+            android:id="@+id/plotNum"
+            android:layout_below="@+id/mobileNumber"
+            android:layout_marginTop="10dp"
+            android:hint="Plot Number"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:textSize="16sp"
+            android:paddingLeft="10dp"
+            android:inputType="text"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/district"
+            android:layout_below="@+id/plotNum"
+            android:layout_marginTop="10dp"
+            android:textColor="#000"
+            android:hint="District"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:textSize="16sp"
+            android:paddingLeft="10dp"
+            android:inputType="text"
+            />
+
+        <Button
+            android:id="@+id/regBtn"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/district"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:background="@color/colorPrimary"
+            android:paddingLeft="10dp"
+            android:text="Register"
+            android:textSize="16sp" />
+
+
+    </RelativeLayout>
+</ScrollView>
